@@ -1,0 +1,7 @@
+<h1>List Employee</h1>
+<button (click)="addEmployee()">Add Employee</button>
+<ol>
+  <li *ngFor = "let employee of employees">
+    {{employee.name}}-{{employee.address}}-{{employee.birthday}}-{{employee.email}}
+  </li>
+</ol>

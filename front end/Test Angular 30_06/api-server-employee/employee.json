@@ -1,0 +1,64 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Thanos",
+      "birthday": "1999-08-19",
+      "email": "thanos@gmail.com",
+      "gender": "male",
+      "address": "Ha Noi",
+      "pinCode": "a"
+    },
+    {
+      "id": 2,
+      "name": "Captain",
+      "birthday": "1999-08-18",
+      "email": "cap@gmail.com",
+      "gender": "male",
+      "address": "Sai gon",
+      "pinCode": "b"
+    },
+    {
+      "id": 3,
+      "name": "Black Widow",
+      "birthday": "1999-08-17",
+      "email": "widow@gmail.com",
+      "gender": "female",
+      "address": "Hai Duong",
+      "pinCode": "c"
+    },
+    {
+      "id": 4,
+      "name": "Hulk",
+      "birthday": "1999-08-16",
+      "email": "hulk@gmail.com",
+      "gender": "male",
+      "address": "Da Nang",
+      "pinCode": "d"
+    },
+    {
+      "name": "nhat",
+      "birthday": "1999-05-18",
+      "email": "nhat@gmail.com",
+      "gender": "male",
+      "address": "Da Nang",
+      "pinCode": "e",
+      "id": 5
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "This is beautiful",
+      "employeeId": 1
+    },
+    {
+      "id": 2,
+      "body": "I like her",
+      "employeeId": 2
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

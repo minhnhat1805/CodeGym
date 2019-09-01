@@ -1,0 +1,39 @@
+.container {
+    width: 30%;
+    background-color: #312f2f96;
+    margin-top: 80px;
+    padding-top: 31px;
+    padding-bottom: 16px;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.form-account input{
+    border-radius: 10px!important;
+    background-color: #f8f9fad6;
+}
+.form-account h2{
+    text-align: center;
+    color:#efd2b2;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background:url(./image/bg-change-password.jpg) 
+}
+.cancel-btn{
+    background-color: #efd628bd!important;
+    cursor: pointer;
+}
+.cancel-btn:hover{
+    background-color: #f5d707ed!important;
+}
+.radio-inline {
+    margin-left: 10px;
+}
+.button {
+    text-align: center;
+}

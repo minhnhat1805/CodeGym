@@ -1,0 +1,30 @@
+<h1>
+  Add Employee
+</h1>>
+<form [FormGroup]="addForm" (ngSubmit)="onSubmit()">
+  <div>
+    <a>Name Employee:</a>
+    <input type="text" formControlName="name">
+  </div>
+  <div>
+    <a>Birthday Employee:</a>
+    <input type="date" formControlName="birthday">
+  </div>
+  <div>
+    <a>Gender Employee:</a>
+    <input type="text" formControlName="gender">
+  </div>
+  <div>
+    <a>Email Employee:</a>
+    <input type="text" formControlName="email">
+  </div>
+  <div>
+    <a>Address Employee:</a>
+    <input type="text" formControlName="address">
+  </div>
+  <div>
+    <a>Code Employee:</a>
+    <input type="text" formControlName="pinCode">
+  </div>
+  <button type="submit">Save</button>
+</form>

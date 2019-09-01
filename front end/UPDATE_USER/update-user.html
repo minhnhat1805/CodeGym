@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="update-user.css" />
+
+</head>
+
+<body>
+
+    <h2>Update User Information</h2>
+
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Update User</button>
+
+
+    <div id="id01" class="modal">
+
+        <form class="modal-content animate" action="">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                    title="Close Modal">&times;</span>
+                <img src="https://pbs.twimg.com/profile_images/597703597808291840/Idwg861I.jpg" alt="Avatar"
+                    class="avatar">
+            </div>
+
+            <div class="container">
+                <label for="uname"><b>Full Name</b></label>
+                <input type="text" placeholder="Enter Username..." name="uname" required>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter email..." name="email" required>
+
+                <label for="gender"><b>Gender</b></label>
+                <div><input type="radio" name="gender" value="male"> Male <br>
+                    <input type="radio" name="gender" value="female"> Female <br>
+                    <input type="radio" name="gender" value="other"> Other
+                </div>
+                <br>
+                <label for="address"><b>Address</b></label>
+                <input type="text" placeholder="Enter address..." name="address" required>
+
+                <label for="phoneNumber"><b>Phone Number</b></label>
+                <input type="text" placeholder="Enter Phone Number..." name="phoneNumber" required>
+
+                <button type="submit">Update</button>
+
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                    class="cancelbtn">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+ .fixed-menu filter-panel   {
+    display: block;
+    position: static;
+    z-index: 0;
+    top: 114px;
+    left: 0px;
+    right: 0px;
+    transition: all 0.3s ease-in-out 0s;
+}
+.filter-and-map-panel{
+    position: relative;
+    height: 72px;
+}
+@media (min-width: 1160px)
+
+
+.container {
+    width: 1060px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}

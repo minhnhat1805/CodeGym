@@ -1,0 +1,50 @@
+.responsive{
+    padding: 0 2px;
+    float: left;
+    width: 24%;       
+}
+body {
+    background-color: #363636;
+    color: white;
+  }
+.gallery{
+    border: 1px solid black;
+}
+@media screen and (max-width: 700px) {
+    body {
+        background-color: aquamarine;
+        color: white;
+      }
+    .responsive{
+        width: 48%;
+        padding: 0 2px;
+        float: left;
+    }
+
+}
+@media screen and (max-width: 500px) {
+    body {
+      background-color: olive;
+      color: white;
+    }
+    .responsive{
+        width: 95%;
+        float: left;
+    }
+  }
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+.clean{
+    content: "";
+    display: table  ;
+    clear: both;    
+}
+.effect h4{
+    text-align: center;
+}
+.finish{
+padding: 6px;
+height: 50px;
+}

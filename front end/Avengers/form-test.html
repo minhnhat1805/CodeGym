@@ -1,0 +1,99 @@
+<!-- Grid row -->
+<div class="row">
+
+    <!-- Grid column -->
+    <div class="col-md-6">
+        <h2><b>Update User Information</b></h2>
+        <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+            <div class="md-form">
+                <label class="text-white">Name :</label>
+                <input mdbInput mdbValidate type="text" formControlName="fullName" class="form-control"
+                    [ngClass]="{ 'is-invalid': submitted && f.fullName.errors }" />
+                <mat-error *ngIf="submitted && f.fullName.errors">
+                    <mat-error *ngIf="f.fullName.errors.required">Your name is required</mat-error>
+                    <mat-error *ngIf="f.fullName.errors.pattern">Your name should not contain special characters
+                    </mat-error>
+                </mat-error>
+
+            </div>
+
+            <div class="md-form">
+                <label class="text-white">Age :</label>
+                <input mdbInput mdbValidate type="text" formControlName="age" class="form-control"
+                    [ngClass]="{ 'is-invalid': submitted && f.age.errors }" />
+                <mat-error *ngIf="submitted && f.age.errors">
+                    <mat-error *ngIf="f.age.errors">Age is required and must from 18 to 70 years old</mat-error>
+                </mat-error>
+            </div>
+            <div class="md-form">
+                <label class="text-white">Gender: </label>&nbsp;
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" formControlName="gender" value="male"
+                        [ngClass]="{ 'is-invalid': submitted && f.gender.errors }" mdbInput>
+                    <label class="custom-control-label">Male</label>
+                </div>
+
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" formControlName="gender" value="female"
+                        [ngClass]="{ 'is-invalid': submitted && f.gender.errors }" mdbInput>
+                    <label class="custom-control-label">Female</label>
+                </div>
+
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" formControlName="gender" value="other"
+                        [ngClass]="{ 'is-invalid': submitted && f.gender.errors }" mdbInput>
+                    <label class="custom-control-label">Other</label>
+                </div>
+                <mat-error *ngIf="submitted && f.gender.errors">
+                    <mat-error *ngIf="f.gender.errors.required" class="validate">Gender is required</mat-error>
+                </mat-error>>
+
+            </div>
+            <div class="md-form">
+                <label class="text-white">Phone number : </label>
+                <input mdbInput mdbValidate type="text" formControlName="phone" class="form-control"
+                    [ngClass]="{ 'is-invalid': submitted && f.phone.errors }" />
+                <mat-error *ngIf="submitted && f.phone.errors">
+                    <mat-error *ngIf="f.phone.errors.required" class="validate">Phone is required</mat-error>>
+                    <mat-error *ngIf="f.phone.errors.pattern" class="validate">Phone must start by 0 and have 10 number
+                    </mat-error>
+                </mat-error>>
+            </div>
+            <div class="md-form">
+                <label class="text-white">Address : </label>
+                <input mdbInput mdbValidate type="text" formControlName="address" class="form-control"
+                    [ngClass]="{ 'is-invalid': submitted && f.address.errors }" />
+                <mat-error *ngIf="submitted && f.address.errors">
+                    <mat-error *ngIf="f.address.errors.required" class="validate">Address is required</mat-error>
+                </mat-error>>
+            </div>
+            <div class="md-form">
+                <label class="text-white">Email: </label>
+                <input mdbInput mdbValidate type="text" formControlName="email" class="form-control"
+                    [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                <mat-error *ngIf="submitted && f.email.errors">
+                    <mat-error *ngIf="f.email.errors.required" class="validate">Email is required</mat-error>
+                    <mat-error *ngIf="f.email.errors.email" class="validate">Email must be a valid email address
+                    </mat-error>
+                </mat-error>
+            </div>
+            <div class="md-form">
+                <label class="text-white">Password: </label>
+                <input mdbInput mdbValidate  type="password" id="myInput" formControlName="password" name="password" class="form-control"
+                    [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+                <mat-error *ngIf="submitted && f.password.errors">
+                    <mat-error *ngIf="f.password.errors.required" class="validate">Password is required</mat-error>
+                    <mat-error *ngIf="f.password.errors.minlength" class="validate">Password must be at least 6 characters
+                    </mat-error>
+                </mat-error>
+            </div>
+            <div class="md-form">
+                    <button type="submit" class="btn btn-primary text-white">
+                        Update
+                    </button>
+                    <a class="btn btn-danger text-white" routerLink="/" style="margin-left: 5px">Cancel</a>
+                </div>
+        </form>
+
+    </div>
+</div>

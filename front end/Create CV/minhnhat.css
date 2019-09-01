@@ -1,0 +1,84 @@
+.framd{
+    position: relative;
+    height: 1000px;
+    width: 60%;
+    border: 5px solid rgb(50, 51, 50);
+    margin: 0px 20% 0px 20% ;  
+}
+.left{
+    background-color: #2a3132;
+    margin: 0px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 30%;
+    float: left;
+    height: 100%;
+
+}
+.left img{
+    float: center;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    background-color: blue;
+}
+.main1{
+    margin: 0px;
+    position: absolute;
+    background-color: #ffffff;
+    right: 35%;
+    width: 35%;
+    height: 30%;
+}
+.main2{
+    margin: 0px;
+    position: absolute;
+    background-color: #ffffff;
+    right: 0px;
+    width: 35%;
+    height: 30%;
+}
+.center{
+    margin: 0px;
+    position: absolute;
+    background-color: #2a3132;
+    right: 0px;
+    width: 70%;
+    height: 25%;
+    top:30%;
+}
+.joker{
+    margin: 0px;
+    position: absolute;
+    background-color: #96f83b;
+    right: 0px;
+    width: 70%;
+    height: 20%;
+    top: 55%;
+}
+#title1{
+    font-style: italic;
+    font-size: 25px;
+}
+#title2{
+    font-style: italic;
+    font-size: 25px;
+}
+
+
+.main1 p{
+    margin: 5px;
+}
+.main1 p b{
+    font-size: 20px;
+}
+.finish{
+    position: absolute;
+    margin: 0px;
+    background-color: #763626;
+    right: 0px;
+    width: 70%;
+    height: 25%;
+    bottom: 0px;
+}
